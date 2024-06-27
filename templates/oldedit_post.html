@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Edit Post</title>
+  </head>
+  <body>
+    <h1>Edit Post</h1>
+    <form method="POST" action="">
+      {{ form.hidden_tag() }}
+      <p>
+        {{ form.title.label }}<br />
+        {{ form.title(size=32) }}
+      </p>
+      <p>
+        {{ form.content.label }}<br />
+        {{ form.content(cols=50, rows=10) }}
+      </p>
+
+      <p>
+        {{ form.tag.label }}<br />
+        {{ form.tag(cols=10, rows=2) }}
+      </p>
+      <p>{{ form.submit() }}</p>
+    </form>
+  </body>
+</html>
