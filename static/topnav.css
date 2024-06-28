@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 
-/* Container Styles */
 .container {
   background: #fff;
   padding: 20px;
@@ -15,7 +14,6 @@
 }
 
 .container-fluid {
-  height: 50px;
   color: black;
   text-align: center;
   padding: 14px 16px;
@@ -25,13 +23,13 @@
   font-weight: 200px;
   z-index: 2;
   margin: 5px;
-}
+} 
 
 /* Navbar Styles */
 .navbar {
   position: sticky;
   top: 0;
-  height: auto; /* Let the content determine the height */
+  height: auto; 5
   padding-top: 0px;
   padding-bottom: 0px;
   z-index: 2;
@@ -39,9 +37,9 @@
 .navbar {
   position: sticky;
   top: 0;
-  width: 100%; /* Ensure navbar spans the full width */
-  z-index: 1000; /* Ensure it's above other content */
-}
+  width: 100%;
+  z-index: 1000; 
+} */
 
 .navbar-nav .nav-link {
   padding-top: 0.5rem;

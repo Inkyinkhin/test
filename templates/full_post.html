@@ -103,9 +103,12 @@
                               <!-- <input type="text" class="form-control rounded-corner" placeholder="Write a comment..."> -->
                             
                               {{ comment_form.hidden_tag() }}
+                            <div class="form-group">
                               {{ comment_form.content.label }}<br />
-                              {{ comment_form.content(cols=50, rows=2) }}
+                              {{ comment_form.content(cols=50, rows=5) }}
+                            </div>
                             </p>
+
                             <p>{{ comment_form.submit() }}</p>
                             </form>
                     </div>

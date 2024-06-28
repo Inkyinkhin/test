@@ -31,7 +31,7 @@
 .navbar {
   position: sticky;
   top: 0;
-  height: auto; /* Let the content determine the height */
+  height: auto;
   padding-top: 0px;
   padding-bottom: 0px;
   z-index: 2;
@@ -44,8 +44,8 @@
 
 .navbar-brand,
 .navbar-toggler {
-  height: auto; /* Let the content determine the height */
-  line-height: 1.5; /* Adjust line-height for vertical alignment */
+  height: auto;
+  line-height: 1.5;
 }
 
 /* Flexbox Styles */
