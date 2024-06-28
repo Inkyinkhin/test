@@ -407,9 +407,11 @@ def edit_post(post_id):
     if request.method == 'POST':
         title = request.form.get('title')
         content = request.form.get('content')
+        meta_data = ' '.join(content.split()[:10])
         tag = request.form.get('dynamicFields[]')
         post.title=title
         post.content=content
+        post.meta=meta_data
         post.tag=tag
         db.session.commit()
         return redirect(url_for('profile', user_id= current_user.id))
