@@ -441,7 +441,7 @@ def profile_edit():
             user.profile_picture = current_user.profile_picture
         user.bio = bio
         db.session.commit()
-        return redirect(url_for('profile_edit',user=user))
+        return redirect(url_for('profile',user_id=current_user.id))
     
     
     return render_template('profile_edit.html',form=form,user=user,picture_url=picture_url)
