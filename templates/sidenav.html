@@ -81,7 +81,9 @@
               <div class="tags-container">
                 <ul class="list-group list-group-horizontal">
                   <i class="fas fa-tag"></i>
-                  <a href="{{ url_for('home_tag',tag=post.tag ) }}" class="tag"
+                  <a
+                    href="{{ url_for('home_tag',tag=popular_post.tag ) }}"
+                    class="tag"
                     >{{popular_post.tag}}</a
                   >
                 </ul>
